@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Whimsy Scoops | Small-batch ice cream</title>
+  <meta name="description" content="Whimsy Scoops serves colourful, small-batch ice cream made for big smiles." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fredoka:wght@500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.svg" /><script defer src="script.js"></script><script defer src="components.js"></script>
+</head>
+
+<body>
+  <div class="announcement">Free sprinkles on every scoop today <span>✦</span> Open daily 12–9pm</div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Whimsy Scoops home"><span class="brand-mark">✺</span> whimsy<span
+        class="brand-dot">.</span></a>
+    <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+    <nav class="nav-links">
+      <a href="index.html">Home</a><a href="menu.html">Menu</a><a href="gallery.html">Gallery</a><a
+        href="about.html">About</a><a href="contact.html">Contact</a>
+    </nav>
+    <a class="header-cta" href="#contact">Find us <span>↗</span></a>
+  </header>
+
+  <main>
+    <section id="home" class="hero page-section">
+      <div class="hero-copy">
+        <p class="eyebrow">Hand-scooped happiness</p>
+        <h1>Life is short.<br /><em>Eat the sprinkles.</em></h1>
+        <p class="hero-text">Playful, small-batch ice cream churned with local milk and a little extra magic. Made fresh
+          for the sunny side of every day.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#menu">See the flavours <span>→</span></a><a
+            class="text-link" href="#contact">Plan a scoop date <span>↗</span></a></div>
+        <div class="hero-note"><span class="avatar-stack"><i>🍓</i><i>🍦</i><i>🍪</i></span><span>Loved by
+            <strong>2,400+</strong> sweet tooths</span></div>
+      </div>
+      <div class="hero-art">
+        <div class="sun-shape"></div>
+        <div class="doodle doodle-star">✦</div>
+        <div class="doodle doodle-heart">♥</div><img
+          src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=900&q=85"
+          alt="Colourful scoops of ice cream in a bowl" />
+        <div class="sticker">made<br />with<br /><span>joy</span> <small>♡</small></div>
+      </div>
+    </section>
+
+    <section id="menu" class="menu-section page-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">A little taste of joy</p>
+          <h2>Today’s <em>favourites</em></h2>
+        </div><a class="text-link" href="#contact">See full menu <span>↗</span></a>
+      </div>
+      <div class="flavour-grid">
+        <article class="flavour-card pink"><span class="flavour-icon">🍓</span>
+          <h3>Strawberry<br />Cloud</h3>
+          <p>Jammy berries · vanilla bean</p><strong>£3.80</strong>
+        </article>
+        <article class="flavour-card yellow"><span class="flavour-icon">🍋</span>
+          <h3>Lemon<br />Meringue</h3>
+          <p>Zesty curd · toasted fluff</p><strong>£3.80</strong>
+        </article>
+        <article class="flavour-card blue"><span class="flavour-icon">🍪</span>
+          <h3>Midnight<br />Cookie</h3>
+          <p>Dark cocoa · brownie bits</p><strong>£4.10</strong>
+        </article>
+        <article class="flavour-card green"><span class="flavour-icon">🌿</span>
+          <h3>Minty<br />Fresh</h3>
+          <p>Garden mint · chocolate bark</p><strong>£3.80</strong>
+        </article>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery-section page-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Spotted in the wild</p>
+          <h2>Scoops of <em>summer</em></h2>
+        </div><span class="gallery-handle">@whimsyscoops</span>
+      </div>
+      <div class="gallery-grid"><img
+          src="https://images.unsplash.com/photo-1497032205916-ac775f0649ae?auto=format&fit=crop&w=800&q=85"
+          alt="Ice cream cone with colourful sprinkles" /><img
+          src="https://images.unsplash.com/photo-1570197788417-0e82375c9371?auto=format&fit=crop&w=800&q=85"
+          alt="Pink ice cream cone" /><img
+          src="https://images.unsplash.com/photo-1580915411954-282cb1c69da3?auto=format&fit=crop&w=800&q=85"
+          alt="Ice cream sundae with fruit" /><img
+          src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=800&q=85"
+          alt="Ice cream bar with toppings" /></div>
+    </section>
+
+    <section id="contact" class="contact-section page-section">
+      <div class="contact-copy">
+        <p class="eyebrow">Come say hi</p>
+        <h2>Let’s make your day<br /><em>a little sweeter.</em></h2>
+        <p>Pop by our pink shop on Market Street, or send a note. We’ll get back to you with a smile.</p>
+        <div class="contact-details">
+          <p>📍 14 Market Street, Brighton</p>
+          <p>🕒 Every day · 12–9pm</p>
+          <p>✉ hello@whimsyscoops.co.uk</p>
+        </div>
+      </div>
+      <form id="contact-form" class="contact-form"><label for="name">Your name</label><input id="name" name="name"
+          type="text" placeholder="e.g. Scoopy McScoop" required /><label for="email">Email address</label><input
+          id="email" name="email" type="email" placeholder="you@example.com" required /><label for="message">Your
+          message</label><textarea id="message" name="message" rows="4" placeholder="Tell us your flavour dreams..."
+          required></textarea><button class="button button-primary" type="submit">Send a little love
+          <span>→</span></button>
+        <p class="form-status" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="brand" href="#home"><span class="brand-mark">✺</span> whimsy<span
+        class="brand-dot">.</span></a>
+    <p>Small-batch joy, scooped daily.</p>
+    <div class="social-links"><a href="https://www.instagram.com" target="_blank" rel="noreferrer">Instagram</a><a
+        href="https://www.tiktok.com" target="_blank" rel="noreferrer">TikTok</a><a href="https://www.facebook.com"
+        target="_blank" rel="noreferrer">Facebook</a></div><small>© 2024 Whimsy Scoops</small>
+  </footer>
+</body>
+
+</html>

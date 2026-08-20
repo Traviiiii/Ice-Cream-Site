@@ -1,0 +1,9 @@
+const page = location.pathname.split('/').pop() || 'index.html';
+const navMarkup = `<header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">✺</span> whimsy<span class="brand-dot">.</span></a><button class="menu-toggle" aria-label="Toggle navigation">☰</button><nav class="nav-links"><a href="index.html">Home</a><a href="menu.html">Menu</a><a href="gallery.html">Gallery</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav><a class="header-cta" href="contact.html">Find us <span>↗</span></a></header>`;
+const footerMarkup = `<footer class="site-footer"><a class="brand" href="index.html"><span class="brand-mark">✺</span> whimsy<span class="brand-dot">.</span></a><p>Small-batch joy, scooped daily.</p><div class="social-links"><a href="https://www.instagram.com" target="_blank">Instagram</a><a href="https://www.tiktok.com" target="_blank">TikTok</a><a href="https://www.facebook.com" target="_blank">Facebook</a></div><small>© 2024 Whimsy Scoops</small></footer>`;
+const announcement = document.querySelector('.announcement'); if (announcement) announcement.textContent = 'Free sprinkles on every scoop today  ✦  Open daily 12–9pm'; else document.body.insertAdjacentHTML('afterbegin','<div class="announcement">Free sprinkles on every scoop today  ✦  Open daily 12–9pm</div>');
+document.querySelector('header.site-header')?.replaceWith(document.createRange().createContextualFragment(navMarkup));
+document.querySelector('footer.site-footer')?.replaceWith(document.createRange().createContextualFragment(footerMarkup));
+document.querySelectorAll('.nav-links a').forEach(a => { if (a.getAttribute('href') === page) a.classList.add('active'); });
+document.querySelector('.menu-toggle')?.addEventListener('click', () => document.querySelector('.nav-links').classList.toggle('open'));
+setTimeout(() => { if (typeof GLightbox === 'function') GLightbox({ selector: '.glightbox', touchNavigation: true, loop: true }); }, 300);
